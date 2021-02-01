@@ -29,16 +29,16 @@ try {
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = '';    // SMTP username
-    $mail->Password   = '';    // SMTP password
+    $mail->Username   = 'gestion.voile83909@gmail.com';    // SMTP username
+    $mail->Password   = 'Voile83form';    // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('', 'Mazharul'); // SMTP username
-    $mail->addAddress('', 'Robin');     // Add a recipient
-    $mail->addAddress('');               // Name is optional
-    $mail->addReplyTo('', 'Information'); // SMTP username
+    $mail->setFrom('gestion.voile83909@gmail.com', 'gestion.voile83909@gmail.com'); // SMTP username
+    $mail->addAddress('', 'No Reply83');     // Add a recipient
+    $mail->addAddress('gestion.voile83909@gmail.com');               // Name is optional
+    $mail->addReplyTo('gestion.voile83909@gmail.com', 'Information'); // SMTP username
     $mail->addCC(''); // SMTP username
     $mail->addBCC(''); // SMTP username
 
